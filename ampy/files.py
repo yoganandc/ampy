@@ -59,7 +59,7 @@ class Files(object):
         # expects string data.
         command = """
             import sys
-            import ubinascii
+            import binascii as ubinascii
             with open('{0}', 'rb') as infile:
                 while True:
                     result = infile.read({1})
